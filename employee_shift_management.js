@@ -60,3 +60,13 @@ function assignShift(employeeName, day, hours){
 }};
 
 // Will display shift assigned to employee
+
+// Task 4: Create a Function to Calculate Total Hours Worked
+
+function calculateTotalHours(employeeName){
+    const employee = employees.find(employee => employee.name ===employeeName);
+    const totalHours = employee.shifts.reduce((sum, shift) => sum + shift.hours, 0);
+    console.log(`${employeeName} has worked a total of ${totalHours} hours.`);        
+};
+
+// Will display total hours worked by specific employee
