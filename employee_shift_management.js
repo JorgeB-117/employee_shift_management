@@ -30,7 +30,18 @@ const employees = [
             {day:"Thursday", hours: 8},
             {day:"Friday", hours: 6},
             {day:"Saturday", hours: 8},
-            {day:"Sunday", hours: 9},
+            {day:"Sunday", hours: 4},
         ]
     },
 ];
+
+// Task 2: Create a Function to Display Employee Shift Details
+
+function displayEmployeeShifts(employee){
+    console.log(`Employee: ${employee.name}`);
+    console.log("Shifts:");
+
+    employee.shifts.forEach(shift => {
+        console.log(`${shift.day}: ${shift.hours} hours`);
+    });
+};
